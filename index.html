@@ -1,9 +1,56 @@
 <!DOCTYPE html>
-    <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-/* Three image containers (use 25% for four, and 50% for two, etc) */
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <style>
+      /* Custom styles */
+      body {
+        font-family: 'Open Sans', sans-serif;
+        background-image:url("Images/Automotive3.jpg");
+		background-attachment: fixed;
+      }
+      .container {
+        padding-top: 60px;
+      }
+      .card {
+        background-color:#ECFFDC;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 255);
+        padding: 30px;
+      }
+      .card img {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+        display: block;
+      }
+      .card h1 {
+        font-size: 2em;
+        font-weight: 600;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      .card h2 {
+        font-size: 1.5em;
+        font-weight: 500;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      .card p {
+        font-size: 1em;
+        font-weight: 400;
+        line-height: 1.5em;
+        margin-bottom: 20px;
+        text-align: justify;
+      }
+      .card .btn {
+        margin-top: 20px;
+        text-align: center;
+        width: 100%;
+      }
 .column {
   float: left;
   width: 10%;
@@ -36,16 +83,16 @@
     }
 .h1{
     text-align:left;
-    font-family:Segoe Print;
-    background-color:rgb(198, 198, 247);
-    font-size:200%;
-    color:black;
+    font-family:Geneva;
+    background-color:#000000;
+    font-size:150%;
+    color:white;
     }
 
 .h2{
     text-align:left;
     font-family:News Gothic MT;
-    font-size:150%;
+    font-size:120%;
     color:black;
     }
 .t1{
@@ -55,42 +102,44 @@
     color:black;
     }
 
-</style>
-
-</head>
-<body style="background-color:#fffffffa">
-    <! –– Tagline ––>
-    <div class = "h0">In the age of social revolution, the fact of not knowing something is a matter of choice.</div>
-  <br>
-  <! –– Profile Picture and introduction ––>
-  <div class="row">
-    <div class="column">
-        <figure><img src="Images/Satish.jpg" alt="Satish" style="width:250px;height:262px;border: 2px solid;"><figcaption>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SATISH KUMAR</figcaption></figure>
-    </div> 
-    <div class="column">
-        <br>
-        <div class = "h1"><i><u>Introduction</u></i></div>
-        <div class = "t1">Motivated and task-oriented individual with 4 years of experience in Software Development.
-        Skilled in C++, Python, HMI & AUTOSAR. Worked with projects involving automotive software development, 
-        HMI development and automation. Experience in complete software development life cycle. Possess critical thinking, 
-        good communication, interpersonal and relation building skills.</t1>
-        </div> 
-    </div>
-    <div class="column">
-        <a href="https://www.linkedin.com/in/Satish-Kumar-e/"><figure><img src="Images/Linkedin.png" alt="Linkedin" style="width:30px;height:30px;"><figcaption><hx>LinkedIn</hx></figcaption></figure></a>
-        <br>
-        <a href="Document/Satish_Kumar_CV.pdf" download><figure><img src="Images/Download.png" alt="Download CV" style="width:30px;height:30px;"><figcaption>Download CV</figcaption></figure></a>
-        
-    </div>
-  </div>
-  <br>
-  <! –– Work Experience ––>
-  <div class = "h1"><i><u>Work Experience</u></i></div>
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="card">
+            <img src="Images/Satish.jpg" alt="Satish">
+            <h1>Satish Kumar</h1>
+            <h2>Software Developer</h2>
+            <p>Motivated and task-oriented individual with 4 years of experience in Software Development. Skilled in C++, Python, HMI & AUTOSAR. Worked with projects involving automotive software development, HMI development and automation. Experience in complete software development life cycle. Possess critical thinking, good communication, interpersonal and relation building skills.</p>
+             <div class="row">
+				<div class="column">
+					<a href="https://www.linkedin.com/in/Satish-Kumar-e/"><figure><img src="Images/Linkedin.png" alt="LinkedIn" style="width:30px;height:30px;"><figcaption style="text-align: center";>LinkedIn</figcaption></figure></a>
+				</div>
+				<div class="column">
+					<a href="Document/Satish_Kumar_CV.pdf" download><figure><img src="Images/Download.png" alt="GitHub" style="width:30px;height:30px;"><figcaption style="text-align: center">Download CV</figcaption></figure></a>
+				</div>
+			</div>
+ <! –– Work Experience ––>
+  <div class = "h1">Work Experience</div>
+  <ol>
+  <! –– Continental ––>
+  <li><div class = "h2"><b><span style="">Senior Embedded Software Developer at Continental, Singapore [12/2022 - Present]</span></b></div></li>
+  <div class = "h2"><span style="">Responsibilities:</span></div>
+  <div class = "t1">
+  <ul>
+    <li> Feature development for Telematics Control Unit (TCU/DCM).</li>
+    <li> Requirement Elicitation in IBM DOORS.</li>
+    <li> Detailed design development in Rapsody.</li>
+    <li> Software development in C++.</li>
+    <li> Validation (manual + automation).</li>
+  </ul>
+</div>
   <br>
   <! –– LUXOFT ––>
-  <div class = "h2"><u><span style="background-color:rgb(248, 236, 63) ;">Work Student at Luxoft, Germany [11/2021 - 06/2022]</span></u></div>
-  <br>
-  <div class = "h2"><span style="background-color:rgb(250, 194, 120) ;">Responsibilities</span></div>
+  <li><div class = "h2"><b><span style="">Work Student at Luxoft, Germany [11/2021 - 06/2022]</span></b></div></li>
+  <div class = "h2"><span style="">Responsibilities:</span></div>
   <div class = "t1">
   <ul>
     <li> Writing functional tests for Diagnostic service applications based on customer provided software test specification in C++.</li>
@@ -99,8 +148,7 @@
     <li> Aspice artifacts automation.</li>
   </ul>
 </div>
-  <br>
-  <div class = "h2"><span style="background-color:rgb(200, 248, 172) ;">Achievements</span></div>
+  <div class = "h2"><span style="">Achievements:</span></div>
   <div class = "t1">
   <ul>
     <li> Automated the process of Aspice artifacts creation. </li>
@@ -110,10 +158,10 @@
     <li> Created xslt file to automatically transform xml to htm</li>
   </ul>
 </div>
+<br>
   <! –– BOSCH ––>
-  <div class = "h2"><u><span style="background-color:rgb(248, 236, 63) ;">Embedded Software Developer at Robert Bosch, India [03/2019 - 02/2020]</span></u></div>
-  <br>
-  <div class = "h2"><span style="background-color:rgb(250, 194, 120) ;">Responsibilities</span></div>
+  <li><div class = "h2"><b><span style="">Embedded Software Developer at Robert Bosch, India [03/2019 - 02/2020]</span></b></div></li>
+  <div class = "h2"><span style="">Responsibilities:</span></div>
   <div class = "t1">
   <ul>
     <li>  Development of embedded software for engine control modules as per customer’s requirements based on Autosar architecture.</li>
@@ -122,11 +170,10 @@
     <li>  Hardware in loop testing on INCA.</li>
   </ul>
 </div>
-
+<br>
   <! –– KPIT ––>
-  <div class = "h2"><u><span style="background-color:rgb(248, 236, 63) ;">Software Engineer at KPIT Technologies, India [11/2016 - 02/2019]</span></u></div>
-  <br>
-  <div class = "h2"><span style="background-color:rgb(250, 194, 120) ;">Responsibilities</span></div>
+  <li><div class = "h2"><b><span style="">Software Engineer at KPIT Technologies, India [11/2016 - 02/2019]</span></b></div></li>
+  <div class = "h2"><span style="">Responsibilities:</span></div>
   <div class = "t1"> 
   <ul>
     <li>  Developing HMI graphics for Instrument panel cluster in Altia as per customer's requirements.</li>
@@ -137,8 +184,7 @@
     <li>  Qualification and Integration validation.</li>
   </ul>
   </div>
-  <br>
-  <div class = "h2"><span style="background-color:rgb(200, 248, 172) ;">Achievements</span></div>
+  <div class = "h2"><span style="">Achievements:</span></div>
   <div class = "t1"> 
   <ul>
     <li>  Feature owner for Traffic sign recognition HMI module. </li>
@@ -147,9 +193,10 @@
     <li> Created macro tools for comparison and formatting.</li>
   </ul>
 </div>
+</ol>
+<br>
   <! –– Technical Skills ––>
-  <div class = "h1"><i><u>Technical Skills</u></i></div>
-  <br>
+  <div class = "h1">Technical Skills</div>
   <div class = "t1">
   <ul>
     <li>  C/C++, Python, Shell Scripting, xslt, HTML & Css. </li>
@@ -163,14 +210,15 @@
     <li>  CAN, TCPIP.</li>
     <li>  Linux, Windows.</li>
     <li>  Qualification and Integration validation.</li>
-    <li>  <b>Tools: </b>Jenkins, Git, Jira, Confluence, Altia, Google-Test, CANOE, DET, INCA, SVN, ECU-Worx, SDOM, Visual Studio, MS Office.</li>
+    <li>  <b>Tools: </b>Jenkins, Doors, Rapsody, Git, Jira, Confluence, Altia, Google-Test, CANOE, DET, INCA, SVN, ECU-Worx, SDOM, Visual Studio, MS Office.</li>
   </ul>
 </div>
+<br>
   <! –– Projects ––>
-  <div class = "h1"><i><u>Projects</u></i></div>
-  <br>
+  <div class = "h1">Projects</div>
   <div class = "t1">
   <ul>
+    <li>  Telematics control unit software development for Suzuki.</li>
     <li>  Automotive Software Development for DFCV, Qingling and CNHTC. </li>
     <li>  HMI development for Denso and Ford. </li>
     <li>  Functional STS for diagnostics service application for Volkswagen.</li>
@@ -180,10 +228,11 @@
     <li>  Customer outstanding visualizer using python.</li>
   </ul>
 </div>
+<br>
   <! –– Education ––>
-  <div class = "h1"><i><u>Education</u></i></div>
-  <br>
-  <div class = "h2"><u><span style="background-color:rgb(248, 236, 63) ;"> Master’s student at Otto von Guericke University Magdeburg, Germany (Ongoing)</span></u></div>
+  <div class = "h1">Education</div>
+   <ol>
+  <li><div class = "h2"><b><span style=""> Master’s student at Otto von Guericke University Magdeburg, Germany (Halted)</span></b></div></li>
   <div class = "t1">
     <p>
         Developed deeper understanding about the application of technology in medical science. Gained exposure with the various tomography<br>
@@ -191,17 +240,17 @@
         market. Learnt about creating end to end product and the various stages of development. 
     </p>
   </div>
-  <div class = "h2"><u><span style="background-color:rgb(248, 236, 63) ;">  Bachelor of Engineering in Electronics and Communication, VTU, India (2016)</span></u></div>
+  <li><div class = "h2"><b><span style="">  Bachelor of Engineering in Electronics and Communication, VTU, India (2016)</span></b></div></li>
   <div class = "t1">
     <p>Learnt about the fundamentals of core electronics, microcontrollers and microprocessors. Developed keen interest in programming<br>
          and its applications.Gained exposure to various Hardware bords like Arduino, RaspberryPi, Udoboard, Beagleboard etc. Contributed <br>
         to the inhouse robotic research centre by developing image and video enhancement algorithms. 
     </p>
   </div>
-
+</ol>
+<br>
   <! –– Hobbies ––>
-  <div class = "h1"><i><u>Hobbies</u></i></div>
-  <br>
+  <div class = "h1">Hobbies</div>
   <div class = "t1">
     <p>I am really found of travelling. It provides the oportunity to meet new people and exchange perspectives.  A big time nature lover. <br>
         Mountains are my obsession. Always up for camping and hiking. Deep interest in Geoplitics and Astrophysics. Morbidly curious about<br>
@@ -209,10 +258,9 @@
         lifestyle, perspective etc.  I 'ike social activities & adventure sports and skydiving is the next item in my bucket list.
       </p>
 </div>
-
+<br>			
 <! –– Contacts ––>
-<div class = "h1"><i><u>Contacts</u></i></div>
-<br>
+<div class = "h1">Contacts</div>
 <div class = "t1">
 <p>Do check out my GitHub where i keep uploading tutorial files in C++ and Python. I also upload Leetcode Solutions along with elaborate description.<br>
     Also checkout my social profiles from the links below!
@@ -222,30 +270,35 @@
 <! –– Various Social Media Links ––>
 <div class="row">
     <div class="column">
-        <a href="https://leetcode.com/satish_singhx/"><figure><img src="Images/Leetcode.png" alt="Leet Code" style="width:30px;height:30px;"><figcaption>LeetCode</figcaption></figure></a>
+        <a href="https://leetcode.com/satish_singhx/"><figure><img src="Images/Leetcode.png" alt="Leet Code" style="width:30px;height:30px;"><figcaption style="text-align: center">LeetCode</figcaption></figure></a>
     </div>
     <div class="column">
-        <a href="https://github.com/satishsingh0077"><figure><img src="Images/Github.png" alt="GitHub" style="width:30px;height:30px;"><figcaption>GitHub</figcaption></figure></a>
+        <a href="https://github.com/satishsingh0077"><figure><img src="Images/Github.png" alt="GitHub" style="width:30px;height:30px;"><figcaption style="text-align: center">GitHub</figcaption></figure></a>
     </div>
     <div class="column">
-        <a href="https://stackoverflow.com/users/17842249/satish-kumar-singh"><figure><img src="Images/StackOverflow.jpeg" alt="Stack Overflow" style="width:30px;height:30px;"><figcaption>StackOverflow</figcaption></figure></a>
+        <a href="https://stackoverflow.com/users/17842249/satish-kumar-singh"><figure><img src="Images/StackOverflow.jpeg" alt="Stack Overflow" style="width:30px;height:30px;"><figcaption style="text-align: center">StackOvf</figcaption></figure></a>
       </div>
       <div class="column">
-        <a href="https://twitter.com/SatishXcom"><figure><img src="Images/Twitter.png" alt="Twitter" style="width:30px;height:30px;"><figcaption>Twitter</figcaption></figure></a>
+        <a href="https://twitter.com/SatishXcom"><figure><img src="Images/Twitter.png" alt="Twitter" style="width:30px;height:30px;"><figcaption style="text-align: center">Twitter</figcaption></figure></a>
       </div>
       <div class="column">
-        <a href="https://www.youtube.com/channel/UCJR1rvSaWUZOixMQodobD7g"><figure><img src="Images/Youtube.png" alt="YouTube" style="width:30px;height:30px;"><figcaption>YouTube</figcaption></figure></a>
+        <a href="https://www.youtube.com/channel/UCJR1rvSaWUZOixMQodobD7g"><figure><img src="Images/Youtube.png" alt="YouTube" style="width:30px;height:30px;"><figcaption style="text-align: center">YouTube</figcaption></figure></a>
       </div>
       <div class="column">
-        <a href="https://www.instagram.com/satish_singhx/"><figure><img src="Images/Instagram.png" alt="Instagram" style="width:30px;height:30px;"><figcaption>Instagram</figcaption></figure></a>
+        <a href="https://www.instagram.com/satish_singhx/"><figure><img src="Images/Instagram.png" alt="Instagram" style="width:30px;height:30px;"><figcaption style="text-align: center">Instagram</figcaption></figure></a>
       </div>
       <div class="column">
-        <a href="https://www.facebook.com/satishsingh.xx"><figure><img src="Images/Facebook.png" alt="Facebook" style="width:30px;height:30px;"><figcaption>Facebook</figcaption></figure></a>
+        <a href="https://www.facebook.com/satishsingh.xx"><figure><img src="Images/Facebook.png" alt="Facebook" style="width:30px;height:30px;"><figcaption style="text-align: center">Facebook</figcaption></figure></a>
       </div>
       <div class="column">
-        <a href="https://wa.me/+4917670106345"><figure><img src="Images/Whatsapp.png" alt="Whatsapp" style="width:30px;height:30px;"><figcaption>Whatsapp</figcaption></figure></a>
+        <a href="https://wa.me/+4917670106345"><figure><img src="Images/Whatsapp.png" alt="Whatsapp" style="width:30px;height:30px;"><figcaption style="text-align: center">Whatsapp</figcaption></figure></a>
       </div>
-  </div>
-  <br><br><br><br>
-
-</body>
+  </div>			
+			
+			
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

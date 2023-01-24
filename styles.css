@@ -1,0 +1,28 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Typography */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 1rem;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
